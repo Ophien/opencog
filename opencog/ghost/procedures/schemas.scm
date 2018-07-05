@@ -596,3 +596,16 @@
 "
   answer-src
 )
+
+; --------------------------------------------------------------
+(define (get_neck_dir)
+"
+  get_neck_dir
+
+  Get the direction of the head turned.
+"
+  (cog-execute! (Get
+    (Evaluation
+      (Predicate "looking")
+      (List (Concept "I") (Variable "$x")))))
+)
