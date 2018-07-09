@@ -646,9 +646,11 @@
 "
   ; This is just to give a pause before actually giving the performance
   ; TODO: Should do this in the GHOST rule instead
-  (sleep 3)
+  (sleep 2)
 
+  (ghost-halt)
   (system singing-script-path)
+  (ghost-run)
 
   fini
 )
